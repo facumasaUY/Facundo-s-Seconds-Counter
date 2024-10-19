@@ -15,6 +15,7 @@ const Card = (props) => {
 const SecondsCounter = (props) => {
     return (
         <div className="d-flex">
+            <Card digito={<i class="fa-regular fa-clock"></i>}/>
             <Card digito={Math.floor(props.counter / 100000 % 10)} />
             <Card digito={Math.floor(props.counter / 10000 % 10)} />
             <Card digito={Math.floor(props.counter / 1000 % 10)} />
